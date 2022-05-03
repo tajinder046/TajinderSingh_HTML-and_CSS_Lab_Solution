@@ -1,0 +1,65 @@
+body{
+    margin: 0%;
+}
+
+/* header */
+header, h2{
+    background-color: red;
+    margin: 0%;
+    padding: 20px;
+    text-align: right;
+}
+
+/* nav + dropdown */
+#navigate{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.menu{
+    margin: 0%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.menu li{
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.menu li:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:nth-child(2):hover .dropdown, .menu li:nth-child(3):hover .dropdown{
+    display: block;
+}
+
+.dropdown{
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    padding: 0%;
+    background-color: whitesmoke;
+    top: 38px;
+    display: none;
+}
+
+.dropdown li{
+    display: block;
+}
+
+.dropdown li:hover{
+    background-color: gainsboro;
+}
+
+.dropdown li a{
+    color: steelblue;
+
+}
